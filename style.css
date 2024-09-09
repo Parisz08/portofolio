@@ -161,6 +161,7 @@ nav ul a {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-decoration: none;
 }
 
 .buttons .btn-cv {
@@ -178,6 +179,7 @@ nav ul a {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-decoration: none;
 }
 
 .hero-image {
@@ -207,8 +209,8 @@ nav ul a {
   position: absolute;
   bottom: -230px;
   left: 30%;
-  width: 96px;
-  height: 96px;
+  width: 100px;
+  height: 100px;
   flex-shrink: 0;
 }
 
@@ -452,33 +454,60 @@ button {
   cursor: pointer;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #1f2937;
-  margin-top: 50px;
+.scroll-down {
+  width: 50rem;
 }
 
-.footer-links a, .terms a {
-  color: white;
-  margin-right: 15px;
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  color: white;
+  gap: 10px;
+}
+
+.social-icons {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .social-icons a {
-  margin-right: 15px;
-  color: white;
-}
-
-.social-icons a:hover {
-  color: #00d9a6;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: var(--Color-2, #393E46);
 }
 
 .terms {
-  display: flex;
+  padding: 48px 96px;
+  gap: 10px;
+  align-self: flex-end;
 }
 
 .terms a {
-  margin-left: 20px;
+  color: rgba(238, 238, 238, 0.75);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
 }
